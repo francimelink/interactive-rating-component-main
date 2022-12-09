@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(216, 12%, 8%);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	font-family: 'Overpass', sans-serif;
+	padding: 24px;
+}
+
+.container {
+	position: relative;
+	max-width: 412px;
+	min-height: 360px;
+	background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+	border-radius: 15px;
+}
+
+.rating {
+	padding: 24px;
+}
+
+.rating__icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid hsl(213, 19%, 18%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.rating__title {
+	line-height: 30.38px;
+	font-size: 24px;
+	font-weight: 700;
+	color: hsl(0, 0%, 100%);
+}
+
+.rating__description {
+	margin: 0.66em 0 1.6em 0;
+	line-height: 22px;
+	font-size: 14px;
+	color: hsla(216, 12%, 63%, 1);
+
+}
+
+.rating__rates {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	gap: 18px;
+	margin-bottom: 1.6em;
+}
+
+.rating__rate {
+	text-align: center;
+	width: 42px;
+	height: 42px;
+	padding: 13.5px;
+	border-radius: 50%;
+	border: 1px solid hsl(213, 19%, 18%);
+	color: hsl(217, 12%, 63%);
+	background-color: hsla(213, 19%, 18%, .5);
+}
+
+.rating__rate:hover,
+.rating__rate.active {
+	background-color: hsl(25, 97%, 53%);
+	color: white;
+	cursor: pointer;
+}
+
+.rating button {
+	width: 100%;
+	background-color: hsl(25, 97%, 53%);
+	border: none;
+	padding: 12px;
+	border-radius: 22.5px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1.87px;
+}
+
+.rating button:hover,
+.rating button:active {
+	background-color: white;
+	color: hsl(25, 97%, 53%);
+}
+
+.thank {
+	display: none;
+	text-align: center;
+	padding: 2em 24px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.thank__image {
+	margin-bottom: 24px;
+}
+
+.thank__result {
+	font-size: 14px;
+	line-height: 22px;
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(213, 19%, 18%);
+	padding: 5px 12px;
+	border-radius: 22.5px;
+	width: 170px;
+}
+
+.thank__title {
+	margin: 24px 0 10px 0;
+	font-size: 24px;
+	color: white;
+	font-weight: 700;
+	line-height: 30.38px;
+}
+
+.thank__text {
+	line-height: 22px;
+	color: hsl(217, 12%, 63%);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+	.rating,
+	.thank {
+		padding: 32px;
+	}
+
+	.rating__icon {
+		width: 48px;
+		height: 48px;
+		margin-bottom: 30px;
+	}
+
+	.rating__title {
+		font-size: 28px;
+		margin-bottom: 15px;
+	}
+
+	.rating__description,
+	.thank__text {
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	.rating__rates {
+		margin-bottom: 32px;
+	}
+
+	.rating__rate {
+		width: 50px;
+		height: 50px;
+		font-size: 16px;
+		padding: 15px;
+	}
+
+	.thank__image {
+		margin: 13px 0 32px 0;
+	}
+
+	.thank__title {
+		margin: 32px 0 10px 0;
+		font-size: 28px;
+	}
+
+	.thank__result {
+		width: 193px;
+		font-size: 15px;
+	}
+}

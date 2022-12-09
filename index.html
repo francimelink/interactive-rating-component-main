@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="styles/style.css">
+
+	<title>Interactive rating component</title>
+
+</head>
+
+<body>
+	<main class="container">
+		<!-- Rating state start -->
+		<section class="rating">
+			<div class="rating__icon">
+				<img src="images/icon-star.svg" alt="Icon star">
+			</div>
+			<div class="rating__title">How did we do?</div>
+			<p class="rating__description">
+				Please let us know how we did with your support request. All feedback is appreciated
+				to help us improve our offering!
+			</p>
+			<ul class="rating__rates">
+				<li class="rating__rate">1</li>
+				<li class="rating__rate">2</li>
+				<li class="rating__rate">3</li>
+				<li class="rating__rate">4</li>
+				<li class="rating__rate">5</li>
+			</ul>
+			<button>
+				Submit
+			</button>
+		</section>
+		<!-- Rating state end -->
+		<!-- Thank you state start -->
+		<section class="thank">
+			<div class="thank__image">
+				<img src="images/illustration-thank-you.svg" alt="Thank you">
+			</div>
+			<div class="thank__result">
+				You selected
+				<span class="thank__rate"></span> out of 5
+			</div>
+
+			<div class="thank__title">Thank you!</div>
+
+			<p class="thank__text">
+				We appreciate you taking the time to give a rating. If you ever need more support,
+				don’t hesitate to get in touch!
+			</p>
+
+		</section>
+	</main>
+
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
